@@ -1,21 +1,17 @@
 
 katz_deli = []
 
-def line(shop_name)
-  if shop_name == []
+def line(katz_deli)
+  if katz_deli == []
     puts "The line is currently empty."
   else
     fragment = ""
-    shop_name.each_with_index do |customer, idx|
+    katz_deli.each_with_index do |customer, idx|
       fragment << " #{idx + 1}. #{customer}"
   end
   puts "The line is currently:#{fragment}"
   end
 end
-
-
-
-
 
 
 def take_a_number(katz_deli, name)
